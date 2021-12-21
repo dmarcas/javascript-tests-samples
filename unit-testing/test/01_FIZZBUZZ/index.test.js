@@ -1,4 +1,4 @@
-const fizzBuzz = require('../src/index');
+const fizzBuzz = require('../../src/01_FIZZBUZZ/fizzBuzz').fizzBuzzMethod;
 
 describe('Fizzbuzz should', () => {
 

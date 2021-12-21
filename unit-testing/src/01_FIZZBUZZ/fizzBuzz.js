@@ -1,32 +1,32 @@
+
+function fizzBuzzProgram() {
+    for (let i=1; i<=100; i++) {
+        const result = fizzBuzz(i);
+        console.log(result);
+    }
+}
+
 function fizzBuzz(number) {
 
     if (number <1 || number>100) {
-        console.log("Number not allowed");
         return number;
     }
     
     if (number % 3 === 0 && number % 5 ===0) {
-        console.log(number);
         return 'FizzBuzz';
     }
 
     if (number % 3 === 0) {
-        console.log(number);
         return 'Fizz';
     }
 
     if (number % 5 === 0) {
-        console.log(number);
         return 'Buzz';
     }
 
-    console.log(number);
     return number;
     
-    /*if (number >=1 || number<=100) {
-        console.log(number);
-        return number
-    }*/
 }
 
-module.exports = fizzBuzz;
+module.exports.fizzBuzzProgram = fizzBuzzProgram;
+module.exports.fizzBuzzMethod = fizzBuzz;
