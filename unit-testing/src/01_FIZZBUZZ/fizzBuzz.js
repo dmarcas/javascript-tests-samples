@@ -1,6 +1,6 @@
 
 function fizzBuzzProgram() {
-    for (let i=1; i<=100; i++) {
+    for (let i=0; i<=100; i++) {
         const result = fizzBuzz(i);
         console.log(result);
     }
@@ -9,7 +9,7 @@ function fizzBuzzProgram() {
 function fizzBuzz(number) {
 
     if (number <1 || number>100) {
-        return number;
+        return "Number not Allowed";
     }
     
     if (number % 3 === 0 && number % 5 ===0) {

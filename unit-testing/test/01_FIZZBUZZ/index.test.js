@@ -3,8 +3,8 @@ const fizzBuzz = require('../../src/01_FIZZBUZZ/fizzBuzz').fizzBuzzMethod;
 describe('Fizzbuzz should', () => {
 
     test('be a number from 1 to 100', () => {
-        expect(fizzBuzz(0)).toBe(0);
-        expect(fizzBuzz(101)).toBe(101);
+        expect(fizzBuzz(0)).toBe("Number not Allowed");
+        expect(fizzBuzz(101)).toBe("Number not Allowed");
     });
 
     test('print one line for each number from 1 to 100', () => {
